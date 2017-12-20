@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Timecamp-vivaldi activity reporter",
+  "description": "Reports activity in vivaldi browser to timecamp time tracking service",
+  "version": "1.0",
+
+  "background": {
+    "scripts": ["thirdParty/date.format.js", "thirdParty/jquery-1.10.2.js", "apiKey.js", "TimecampActivityReporter.js", "background.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "<all_urls>",
+    "alarms"
+  ]
+}
